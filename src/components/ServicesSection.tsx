@@ -1,27 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const WIXBASE = "https://static.wixstatic.com/media";
-
 const services = [
-  {
-    label: "Pulmonology",
-    href: "#",
-    img: `${WIXBASE}/2d3538_009b7add4e2941749ea4a5ebceaf55ac~mv2.png/v1/fill/w_340,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d3538_009b7add4e2941749ea4a5ebceaf55ac~mv2.png`,
-    alt: "Pulmonology services – chest X-ray",
-  },
-  {
-    label: "ENT",
-    href: "/best-ent-services-thrissur",
-    img: `${WIXBASE}/2d3538_9871d82f81cf4e119ffa278f4ae32b12~mv2.png/v1/fill/w_340,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d3538_9871d82f81cf4e119ffa278f4ae32b12~mv2.png`,
-    alt: "Person ear is being checked by a ENT specialist",
-  },
-  {
-    label: "Aesthetics",
-    href: "#",
-    img: `${WIXBASE}/2d3538_d661dc7981be45f398527175d5bc5341~mv2.png/v1/fill/w_340,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/2d3538_d661dc7981be45f398527175d5bc5341~mv2.png`,
-    alt: "PRP injection over face of a patient",
-  },
+  { label: "Pulmonology", href: "#",                              img: "/images/service-pulmonology.jpg", alt: "Pulmonology services – chest X-ray"                   },
+  { label: "ENT",         href: "/best-ent-services-thrissur",   img: "/images/service-ent.jpg",         alt: "Person ear is being checked by a ENT specialist"      },
+  { label: "Aesthetics",  href: "#",                              img: "/images/service-aesthetics.jpg",  alt: "PRP injection over face of a patient"                 },
 ];
 
 export default function ServicesSection() {
@@ -39,7 +22,6 @@ export default function ServicesSection() {
               width={340}
               height={300}
               className="w-full h-[285px] object-cover"
-              unoptimized
             />
             <div className="bg-[#f5f0e1] px-4 py-3.5">
               <Link

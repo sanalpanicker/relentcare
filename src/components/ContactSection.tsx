@@ -3,8 +3,7 @@
 import Link from "next/link";
 import { useState, FormEvent } from "react";
 
-const CONTACT_IMG =
-  "https://static.wixstatic.com/media/bbc559_408f2473a6e9478c938a4167cb1f200a~mv2.jpg/v1/fill/w_720,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/bbc559_408f2473a6e9478c938a4167cb1f200a~mv2.jpg";
+const CONTACT_IMG = "/images/contact-bg.jpg";
 
 export default function ContactSection() {
   const [submitted, setSubmitted] = useState(false);

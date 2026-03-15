@@ -1,5 +1,4 @@
-const HERO_IMG =
-  "https://static.wixstatic.com/media/11062b_f1b344e2affc49809d02261fe478f934f000.jpg/v1/fill/w_1440,h_560,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/11062b_f1b344e2affc49809d02261fe478f934f000.jpg";
+const HERO_IMG = "/images/hero-bg.jpg";
 
 export default function Hero() {
   return (
